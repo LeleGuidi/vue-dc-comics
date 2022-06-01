@@ -82,7 +82,6 @@ export default {
 <style scoped lang="scss">
 @import '../assets/style/mixins.scss';
 .header {
-    padding: 0.5rem;
     text-transform: uppercase;
     &_container {
         max-width: var(--container-lg);
@@ -90,23 +89,30 @@ export default {
         margin: var(--margin-auto);
     }
     &_logo {
+        margin: 0.8rem 0;
         img {
             width: 80px;
+            vertical-align: middle
         }
     }
     &_nav{
         ul {
             @include listInLine;
-            a {
-                text-decoration: none;
+            li {
                 padding: 0 0.8rem;
+            }
+            a {
+                display: inline-block;
+                height: 100%;
+                text-decoration: none;
                 font-size: var(--font-sm);
                 font-weight: 500;
                 color: var(--secondary-color);
                 
             }
             .active a {
-                border-bottom: 2px solid var(--primary-color);
+                border-bottom: 0.3rem solid var(--primary-color);
+                color: var(--primary-color);
             }
         }
     }

@@ -13,11 +13,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/style/mixins.scss';
     .main {
         background-color: var(--tertiary-color);
         &_container {   
             max-width: var(--container-lg);
             margin: var(--margin-auto);
+            height: 8rem;
+            @include flex('start', 'center');
             h1 {
                 color: var(--text-white);
             }
