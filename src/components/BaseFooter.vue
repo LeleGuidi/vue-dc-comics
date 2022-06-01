@@ -63,7 +63,15 @@
             </div>
         </div>
         <div class="footer_bottom">
-
+            <div class="footer_bottom_row">
+                <div class="col_left">
+                    <button class="sign_btn">Sign-up now!</button>
+                </div>
+                <div class="col_right">
+                    <h3>Follow us</h3>
+                    <a v-for="(social, index) in socials" :key="index" href="#/"><img :src="social.url" :alt="social.name"></a>
+                </div>
+            </div>
         </div>
     </footer>
 </template>
@@ -98,6 +106,28 @@ export default {
                     name: 'dc power visa',
                     url: require('../assets/img/buy-dc-power-visa.svg'),
                     alt: 'dc power visa',
+                },
+            ],
+            socials: [
+                {
+                    name: 'facebook',
+                    url: require('../assets/img/footer-facebook.png')
+                },
+                {
+                    name: 'twitter',
+                    url: require('../assets/img/footer-twitter.png')
+                },
+                {
+                    name: 'youtube',
+                    url: require('../assets/img/footer-youtube.png')
+                },
+                {
+                    name: 'pinterest',
+                    url: require('../assets/img/footer-pinterest.png')
+                },
+                {
+                    name: 'periscope',
+                    url: require('../assets/img/footer-periscope.png')
                 },
             ]
         }
@@ -189,6 +219,37 @@ export default {
             }
             
         }
+    }
+
+    &_bottom {
+        background-color: var(--secondary-color);
+
+        &_row {
+            @include flex('between', 'center');
+            max-width: var(--container-lg);
+            margin: var(--margin-auto);
+            padding: 2.5rem 0;
+        }
+
+        .sign_btn {
+            text-transform: uppercase;
+            color: var(--text-white);
+            border: 0.125rem solid var(--primary-color);
+            padding: 0.5rem;
+            background-color: transparent;
+        }
+
+        .col_right {
+            text-align: right;
+            @include flex ('center', 'center');
+            gap: 1rem;
+
+            h3 {
+                color: var(--primary-color);
+                text-transform: uppercase;
+            }
+        }
+
     }
 }
 </style>
