@@ -99,19 +99,21 @@ export default {
         ul {
             @include listInLine;
             li {
-                padding: 0 0.8rem;
+                margin: 0 0.8rem;
+            }
+            .active {
+                border-bottom: 0.3rem solid var(--primary-color);
             }
             a {
                 display: inline-block;
-                height: 100%;
                 text-decoration: none;
                 font-size: var(--font-sm);
                 font-weight: 500;
                 color: var(--secondary-color);
+                padding: 2.7rem 0
                 
             }
             .active a {
-                border-bottom: 0.3rem solid var(--primary-color);
                 color: var(--primary-color);
             }
         }
