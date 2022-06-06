@@ -7,7 +7,7 @@
             <div class="header_nav">
                 <nav>
                     <ul>
-                        <li v-for="(link, index) in links" :key="index" :class="{active : link.current == true}">
+                        <li v-for="(link, index) in links" :key="index" :class="(link.current == true)? 'active' : ''" @click="linkActive(index)">
                             <a :href="link.url">{{link.text}}</a>
                         </li>
                     </ul>
@@ -75,6 +75,13 @@ export default {
             }
             ]
         }  
+    },
+    methods: {
+        linkActive(index) {
+            if (this.links[index].current == false) {
+                !this.links[index].current
+            }
+        }
     }
 }
 </script>
