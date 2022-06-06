@@ -2,7 +2,7 @@
     <header class="header">
         <div class="header_container">
             <div class="header_logo">
-                <img src="../assets/img/dc-logo.png" alt="DC LOGO">
+                <img src="../../assets/img/dc-logo.png" alt="DC LOGO">
             </div>
             <div class="header_nav">
                 <nav>
@@ -87,7 +87,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../assets/style/mixins.scss';
+@import '../../assets/style/mixins.scss';
 .header {
     text-transform: uppercase;
     &_container {

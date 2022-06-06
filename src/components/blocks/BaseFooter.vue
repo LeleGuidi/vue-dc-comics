@@ -58,7 +58,7 @@
                     </nav>
                 </div>
                 <div class="col_right">
-                    <img src="../assets/img/dc-logo-bg.png" alt="logo dc">
+                    <img src="../../assets/img/dc-logo-bg.png" alt="logo dc">
                 </div>
             </div>
         </div>
@@ -84,50 +84,50 @@ export default {
             contents: [
                 {
                     name: 'digital comics',
-                    url: require('../assets/img/buy-comics-digital-comics.png'),
+                    url: require('../../assets/img/buy-comics-digital-comics.png'),
                     alt: 'digital comics',
                 },
                 {
                     name: 'dc merchandise',
-                    url: require('../assets/img/buy-comics-merchandise.png'),
+                    url: require('../../assets/img/buy-comics-merchandise.png'),
                     alt: 'dc merchandise',
                 },
                 {
                     name: 'subscription',
-                    url: require('../assets/img/buy-comics-subscriptions.png'),
+                    url: require('../../assets/img/buy-comics-subscriptions.png'),
                     alt: 'subscription',
                 },
                 {
                     name: 'comic shop locator',
-                    url: require('../assets/img/buy-comics-shop-locator.png'),
+                    url: require('../../assets/img/buy-comics-shop-locator.png'),
                     alt: 'shop locator',
                 },
                 {
                     name: 'dc power visa',
-                    url: require('../assets/img/buy-dc-power-visa.svg'),
+                    url: require('../../assets/img/buy-dc-power-visa.svg'),
                     alt: 'dc power visa',
                 },
             ],
             socials: [
                 {
                     name: 'facebook',
-                    url: require('../assets/img/footer-facebook.png')
+                    url: require('../../assets/img/footer-facebook.png')
                 },
                 {
                     name: 'twitter',
-                    url: require('../assets/img/footer-twitter.png')
+                    url: require('../../assets/img/footer-twitter.png')
                 },
                 {
                     name: 'youtube',
-                    url: require('../assets/img/footer-youtube.png')
+                    url: require('../../assets/img/footer-youtube.png')
                 },
                 {
                     name: 'pinterest',
-                    url: require('../assets/img/footer-pinterest.png')
+                    url: require('../../assets/img/footer-pinterest.png')
                 },
                 {
                     name: 'periscope',
-                    url: require('../assets/img/footer-periscope.png')
+                    url: require('../../assets/img/footer-periscope.png')
                 },
             ]
         }
@@ -136,7 +136,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../assets/style/mixins.scss';
+@import '../../assets/style/mixins.scss';
 .footer {
 
     &_top{
@@ -172,7 +172,7 @@ export default {
     }
 
     &_center {
-        background-image: url("../assets/img/footer-bg.jpg");
+        background-image: url("../../assets/img/footer-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
 
