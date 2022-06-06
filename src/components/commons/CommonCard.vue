@@ -1,6 +1,8 @@
 <template>
     <div class="card">
-        <img :src="thumb" :alt="series">
+        <div class="card_img">
+            <img :src="thumb" :alt="series">
+        </div>
         <h4>{{series}}</h4>
     </div>
 </template>
@@ -19,13 +21,21 @@ export default {
 .card {
     text-align: left;
     font-size: 0;
-    img {
+
+    &_img {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        overflow: hidden;
+        margin-bottom: 0.6rem;
+
+        img {
         width: 100%;
         object-fit: cover;
         object-position: top;
-        margin-bottom: 0.6rem;
-        height: 10.4994rem;
+        }
     }
+    
     h4 {
         font-weight: 500;
         font-size: var(--font-sm);
