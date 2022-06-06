@@ -32,3 +32,12 @@
     display: flex;
     list-style: none;
 }
+
+@mixin blueButton {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    padding: .625rem 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
