@@ -1,5 +1,6 @@
 <template>
     <section class="section_cards">
+        <h1>current series</h1>
         <div class="row">
             <div class="cards_list" v-for="(serie, index) in series" :key="index">
                 <CommonCard :thumb="serie.thumb" :series="serie.series"/>
@@ -104,27 +105,33 @@ export default {
 .section_cards {
     max-width: var(--container-lg);
     margin: var(--margin-auto);
-    padding: 1rem 0;
+    padding: 3.5rem 0 1rem 0;
     text-transform: uppercase;
+    position: relative;
     text-align: center;
 
+    h1 {
+        background-color: var(--primary-color);
+        color: var(--text-white);
+        display: inline-block;
+        position: absolute;
+        top: -1.5rem;
+        left: -0.5rem;
+        padding: 0.8rem 1.5rem
+
+
+    }
+
     .row {
-        @include flex('center', 'center');
+        @include flex('center', 'start');
         gap: 2rem;
         flex-wrap: wrap;
-        padding: 3rem 0;
+        margin-bottom: 2.5rem;
 
         .cards_list {
             width: calc(100% / 6 - 2rem);
             color: var(--text-white);
-
-            &:after {
-                content: "";
-                display: block;
-                padding-bottom: 100%;
-            }
         }
-        
     }
 
     button {

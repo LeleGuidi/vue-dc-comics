@@ -18,14 +18,15 @@ export default {
 <style lang="scss" scoped>
 .card {
     text-align: left;
-
+    font-size: 0;
     img {
-        object-fit: contain;
-        object-position: top;
         width: 100%;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 0.6rem;
+        height: 10.4994rem;
     }
     h4 {
-        margin-top: 0.6rem;
         font-weight: 500;
         font-size: var(--font-sm);
     }
